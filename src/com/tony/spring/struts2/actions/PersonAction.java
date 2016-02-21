@@ -12,7 +12,7 @@ public class PersonAction {
 	
 	public String execute(){
 		System.out.println("execute..");
-		
+		personService.save();
 		return "success";
 	}
 }
