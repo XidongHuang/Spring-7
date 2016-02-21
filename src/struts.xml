@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+
+	<!-- Configure global file -->
+	  <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+	<!-- 
+	
+		When Spring integrates Struts2, the Spring "action" in Struts should point to that bean's id in IOC 
+	
+	 -->
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<action name="person-save" class="personAction">
+			<result>/success.jsp</result>
+		</action>
+
+
+	</package>
+
+
+
+
+
+</struts>
